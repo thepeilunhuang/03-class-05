@@ -4,14 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS only （如果想要改bootstrap 的東西，則bootstraps的連結要貼在自己的css前） -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+
     <title>03-class-05</title>
 </head>
 <body>
     <main>
+        <!-- Skills -->
+        <section class="skills" id="skills">
+            <h2>
+                SKILLS
+            </h2>
+            <!-- html -->
+            <div id="html">
+                <aside></aside>
+                <p>
+                    Build HTML-5 websites defining basic structure and using semantic HTML properly. Building a properly menu, tables and forms.
+                </p>
+            </div>
+            <!-- css -->
+            <div id="css">
+                <p>
+                    Using CSS to apply styling to the website by using tags, classes, and id selector. Plus, builing a responsive website, using @media query selector.
+                </p>
+                <aside></aside>
+            </div>
+
+            <!-- JavaScript -->
+            <div id="javascript">
+                <aside></aside>
+                <p>
+                    Programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. --by Wikipedia
+                </p>
+            </div>
+        </section>
         
+        <!-- 
+        #1 Remove style form the div Card
+        #1.1 insert into CSS
+        #2 give a unique id or class ot ever Card
+        #3 change the btn class from a tap inside of the card
+        #4 insert a backgron pic to the aside -->
+
+        <!-- education section -->
+        <section class="education" id="education">
+            <h2>
+                EDUCATION
+            </h2>
+            <!-- Tamwood card -->
+            <div class="card" id="tamwood-card">
+                <!-- <img src="" class="card-img-top" alt="..."> -->
+                <aside></aside>
+                <div class="card-body">
+                  <h5 class="card-title">Tamwood College</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://tamwood.com/careers/web-developer/" target="_blank" class="btn btn-primary">Web development</a>
+                </div>
+              </div>
+     
+            <!-- Chula card -->
+            <div class="card" id="chula-card">
+                <!-- <img src="" class="card-img-top" alt="..."> -->
+                <aside></aside>
+                <div class="card-body">
+                  <h5 class="card-title">Chula University</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://www.chula.ac.th/program/computer-science-and-information-technology/" target="_blank" class="btn btn-primary">C.S</a>
+                </div>
+              </div>
+
+            <!-- Seoul card -->
+            <div class="card" id="seoul-card">
+                <!-- <img src="" class="card-img-top" alt="..."> -->
+                <aside></aside>
+                <div class="card-body">
+                  <h5 class="card-title">Seoul University</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://cse.snu.ac.kr/en" target="_blank" class="btn btn-primary">C.S. & E</a>
+                </div>
+              </div>
+
+            <!-- Unam card -->
+            <div class="card" id="unam-card">
+                <!-- <img src="" class="card-img-top" alt="..."> -->
+                <aside></aside>
+                <div class="card-body">
+                  <h5 class="card-title">Unam University</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://repository.unam.edu.na/handle/11070/48" target="_blank" class="btn btn-primary">Post-Bsc Comp.</a>
+                </div>
+              </div>
+        </section>
+    
+       
         <!-- contact section -->
         <section class="contact" id="contact">
+            <h2>
+                CONTACT
+            </h2>
             <form>
                 <div>
                     <label for="fullname">Full Name</label>
@@ -29,9 +122,10 @@
                     <label for="message">Message</label>
                     <textarea placeholder="message" required></textarea>
                 </div>
-                <div>
-                    <input type="submit" value="Send Message">
-                    <input type="reset" value="Clear">
+                <div class="d-flex"> 
+                    <!-- d-flex 是一個bootstraps讓東西flex排列 -->
+                    <input type="submit" value="Send Message" class="btn">
+                    <input type="reset" value="Clear" class="btn">
                 </div>
             </form>
         </section>
@@ -41,5 +135,9 @@
     <footer id="footer" class="footer">
         &copy; <span>Your Site Name.</span>All Right reserved. Designed by Peilun
     </footer>
+
+
+    <!-- JavaScript Bundle with Popper (通常把javascript相關的東西放到最後，因為javascript會在整個html render 完後執行)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
