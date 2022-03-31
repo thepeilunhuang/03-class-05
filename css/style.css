@@ -7,16 +7,92 @@
 @media (min-width:300px){
     body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 3%;
+    }
+
+    section{
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+    }
+
+    section > h2{
+        width: 90%;
+        color: steelblue;
+        font-size: 36px;
+        border-bottom: 3px solid steelblue;
+
+    }
+    
+    .education{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+        /* row-gap是製造東西間隔的方式 */
+
+    }
+
+    .education aside{
+        width: 40vh;
+        height: 25vh;
+    }
+    #tamwood-card > aside{
+        background: url("/img/tamwood.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #chula-card > aside{
+        background: url("/img/chula.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #seoul-card > aside{
+        background: url("/img/soul.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #unam-card > aside{
+        background: url("/img/unam.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .card {
+        align-items: center;
     }
 
     .contact [type="text"], [type="email"], textarea{  
-        width: 95%;
+        width: 90%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         padding: 3%;
 
     }
+    
+    .contact [class="d-flex"]{
+        /* 兩個按鈕都有class（的attribute)="d-flex(的value)" */
+        justify-content: space-evenly;
+    }
+
+    .btn{
+        color: white;
+        background-color: darkblue;
+        font-weight: 600;
+    }
+
+    .btn :hover{
+        background-color: steelblue;
+    }
+
     .footer{
         background-color: darkblue;
-        color: black;
+        color:white;
         padding: 5%;
         text-align: center;
        
