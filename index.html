@@ -4,14 +4,282 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS only （如果想要改bootstrap 的東西，則bootstraps的連結要貼在自己的css前） -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+
     <title>03-class-05</title>
 </head>
 <body>
     <main>
+        <!-- header -->
+
+        <header class="header" id="header">
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/xml.jpeg" class="d-block w-100" alt="xml code">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/javascript.jpeg" class="d-block w-100" alt="react code">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/css.jpeg" class="d-block w-100" alt="scss code">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        </header>
+
+        <!-- about -->
+        <section class="about" id="about">
+            <h2>
+                about me
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora inventore quia quo, consequuntur repellat voluptate impedit dolor quisquam, sint ullam quae neque cupiditate.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam quibusdam pariatur repellendus minima quos, quaerat dolorum a voluptas. Dignissimos, sed totam. Ea, quos tenetur modi autem dolorum inventore quibusdam fuga quas animi porro.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum, consectetur quidem deserunt minima ad odio provident asperiores optio praesentium, nostrum, doloremque quae culpa! Harum dolorum repellendus assumenda aut veniam atque repellat corporis voluptate! Hic at optio minus dolores?
+            </p>
+        </section>
+        <!-- work ex -->
+        <section class="work-experience d-flex" id="work-experience"> 
+            <h2>
+                WORK experience
+            </h2>
+            <article class="first-job">
+                <h3>Google - web-developer</h3>
+                <h5>
+                    Jan 2021- Dec 2022
+                </h5>
+                <p>
+                    <ol>
+                        <li>
+                            worked with the team leader to build responsive projects, using preporcessors, bootstrap, and Google Fonts
+                        </li>
+                        <li>
+                            Planned ahead project, using JIRA software and Google SaaS.
+                        </li>
+                        <li>
+                            Worked with clients to build cloud services and projects 
+                        </li>
+                    </ol>
+                </p>
+            </article>
+            <article class="second-job">
+                <h3>Microsoft - web-developer</h3>
+                <h4>
+                    Jan 2020- Dec 2020
+                </h4>
+                <p>
+                    <ol>
+                        <li>
+                            Deployed projects following the Microsoft project manager software, following the due date
+                        </li>
+                        <li>
+                            Planned and scheduled meetings with prospective clients.
+                        </li>
+                        <li>
+                            Worked with clients to build cloud services and projects 
+                        </li>
+                    </ol>
+                </p>
+            </article>
+            <article class="third-job">
+                <h3> Apple - app-developer</h3>
+                <h4>
+                    Mar 2017- Jan 2020
+                </h4>
+                <p>
+                    <ol>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum minima quos minus!
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat in unde laborum ad corporis fuga labore libero animi a. Maxime nobis repellat sit ducimus exercitationem aspernatur autem officia, quisquam dolorem sunt odio.
+                        </li>
+                        <li>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet ipsam alias earum obcaecati eligendi ducimus pariatur, magnam ipsum?
+                        </li>
+                    </ol>
+                </p>
+            </article>
+        </section>
+        <!-- project -->
+      
+        <section class="projects" id="projects">
+            <h2>
+                projects
+            </h2>
+            <!-- accordion wrapper -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#projectone" aria-expanded="false" aria-controls="collapseone">
+                      Personal Portfolio - Html and CSS
+                    </button>
+                    </h2>
+                    <div id="projectone" class="accordion-collapse collapse show" aria-labelledby="headingone" data-bs-parent="#projectWrapper">
+                        <div class="accordion-body">
+                        <aside>
+                            #1 screenshot
+                        </aside>
+                        <p>
+                            <strong>This is my first my HTML and css project. </strong> I had to work  5 days to build  4 pages of my portfolio, talking about my skills, education, background experience, and project. Desipite that this is my first project, I have improved way more.
+                        </p>
+                        <a href="https://www.github.com" target="_blank" class="btn">
+                            portfolio repository
+                        </a>
+                    </div>
+                  </div>
+            <!-- second -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#projecttwo" aria-expanded="false" aria-controls="collapsetwo">
+                      Personal Portfolio - Html and CSS
+                    </button>
+                    </h2>
+                    <div id="projecttwo" class="accordion-collapse collapse show" aria-labelledby="headingtwo" data-bs-parent="#projectWrapper">
+                        <div class="accordion-body">
+                        <aside>
+                            #2 screenshot
+                        </aside>
+                        <p>
+                            <strong>This is my first my HTML and css project. </strong> I had to work  5 days to build  4 pages of my portfolio, talking about my skills, education, background experience, and project. Desipite that this is my first project, I have improved way more.
+                        </p>
+                        <a href="https://www.github.com" target="_blank" class="btn">
+                            portfolio repository
+                        </a>
+                    </div>
+                  </div>
+            </div> <!-- end of second -->
+
+            <!-- third -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#projectthree" aria-expanded="false" aria-controls="collapsethree">
+                      Personal Portfolio - Html and CSS
+                    </button>
+                    </h2>
+                    <div id="projectthree" class="accordion-collapse collapse show" aria-labelledby="headingthree" data-bs-parent="#projectWrapper">
+                        <div class="accordion-body">
+                        <aside>
+                            #3 screenshot
+                        </aside>
+                        <p>
+                            <strong>This is my first my HTML and css project. </strong> I had to work  5 days to build  4 pages of my portfolio, talking about my skills, education, background experience, and project. Desipite that this is my first project, I have improved way more.
+                        </p>
+                        <a href="https://www.github.com" target="_blank" class="btn">
+                            portfolio repository
+                        </a>
+                    </div>
+                  </div>
+            </div> <!--end of third-->
+        </section>
+
+        <!-- Skills -->
+        <section class="skills" id="skills">
+            <h2>
+                SKILLS
+            </h2>
+            <!-- html -->
+            <div id="html">
+                <aside></aside>
+                <p>
+                    Build HTML-5 websites defining basic structure and using semantic HTML properly. Building a properly menu, tables and forms.
+                </p>
+            </div>
+            <!-- css -->
+            <div id="css">
+                <p>
+                    Using CSS to apply styling to the website by using tags, classes, and id selector. Plus, builing a responsive website, using @media query selector.
+                </p>
+                <aside></aside>
+            </div>
+
+            <!-- JavaScript -->
+            <div id="javascript">
+                <aside></aside>
+                <p>
+                    Programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. --by Wikipedia
+                </p>
+            </div>
+        </section>
         
+        <!-- 
+        #1 Remove style form the div Card
+        #1.1 insert into CSS
+        #2 give a unique id or class ot ever Card
+        #3 change the btn class from a tap inside of the card
+        #4 insert a backgron pic to the aside -->
+
+        <!-- education section -->
+        <section class="education" id="education">
+            <h2>
+                EDUCATION
+            </h2>
+            <!-- Tamwood card -->
+            <div class="card" id="tamwood-card">
+                <!-- <img src="" class="card-img-top" alt="..."> -->
+                <aside></aside>
+                <div class="card-body">
+                  <h6 class="card-title">Tamwood College</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://tamwood.com/careers/web-developer/" target="_blank" class="btn btn-primary">Web development</a>
+                </div>
+              </div>
+     
+            <!-- Chula card -->
+            <div class="card" id="chula-card">
+                <!-- <img src="" class="card-img-top" alt="..."> -->
+                <aside></aside>
+                <div class="card-body">
+                  <h5 class="card-title">Chula University</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://www.chula.ac.th/program/computer-science-and-information-technology/" target="_blank" class="btn btn-primary">C.S</a>
+                </div>
+              </div>
+
+            <!-- Seoul card -->
+            <div class="card" id="seoul-card">
+                <!-- <img src="" class="card-img-top" alt="..."> -->
+                <aside></aside>
+                <div class="card-body">
+                  <h5 class="card-title">Seoul University</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://cse.snu.ac.kr/en" target="_blank" class="btn btn-primary">C.S. & E</a>
+                </div>
+              </div>
+
+            <!-- Unam card -->
+            <div class="card" id="unam-card">
+                <!-- <img src="" class="card-img-top" alt="..."> -->
+                <aside></aside>
+                <div class="card-body">
+                  <h5 class="card-title">Unam University</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://repository.unam.edu.na/handle/11070/48" target="_blank" class="btn btn-primary">Post-Bsc Comp.</a>
+                </div>
+              </div>
+        </section>
+    
+       
         <!-- contact section -->
         <section class="contact" id="contact">
+            <h2>
+                CONTACT
+            </h2>
             <form>
                 <div>
                     <label for="fullname">Full Name</label>
@@ -29,9 +297,10 @@
                     <label for="message">Message</label>
                     <textarea placeholder="message" required></textarea>
                 </div>
-                <div>
-                    <input type="submit" value="Send Message">
-                    <input type="reset" value="Clear">
+                <div class="d-flex"> 
+                    <!-- d-flex 是一個bootstraps讓東西flex排列 -->
+                    <input type="submit" value="Send Message" class="btn">
+                    <input type="reset" value="Clear" class="btn">
                 </div>
             </form>
         </section>
@@ -41,5 +310,9 @@
     <footer id="footer" class="footer">
         &copy; <span>Your Site Name.</span>All Right reserved. Designed by Peilun
     </footer>
+
+
+    <!-- JavaScript Bundle with Popper (通常把javascript相關的東西放到最後，因為javascript會在整個html render 完後執行)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
